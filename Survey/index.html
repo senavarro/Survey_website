@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+    <title>Lifestyle Survey</title>
+</head>
+
+<body>
+	<h1 id="title">Lifestyle & Health Form</h1>
+
+	<p id="description">Please fill out this short survey about your life-style habits.</p>
+
+	 <form action="/submit" id="survey-form" method="GET">
+
+        <fieldset>
+            <div class="left">
+                <label for="name" id="name-label">Name:</label>
+            </div>
+            <div class="right">
+                <input type="text" id="name" placeholder="Enter your full name" name="name" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+        	<div class="left">
+        		<label for="email" id="email-label">Email</label>
+        	</div>
+        	<div class="right">
+        		<input type="text" id="email" placeholder="Enter your email adress" name="email" required>
+        	</div>
+        </fieldset>
+
+
+        <fieldset>
+        	<div class="left">
+        		<label for="age" id="age-label">Age</label>
+        	</div>
+        	<div class="right">
+        		<input type="number" id="age" placeholder="Enter your age" name="age" required>
+        	</div>
+        </fieldset>
+
+        <fieldset>
+        	<div class="left">
+        		<label for="dropdown">Gender:</label>
+        	</div>
+        	<div>
+        		<select name="gender" id="dropdown">
+        			<option selected disabled>--select--</option>
+        			<option value="male">Male</option>
+        			<option value="female">Female</option>
+        			<option vale="other">Other</option>
+        		</select>
+        	</div>
+        </fieldset>
+
+        <fieldset>
+        	<div class="left">
+        		<legend>Which kind of diet do you follow?</legend>
+        	</div>
+        	<div class="right">
+        		<input type="radio" name="omnivore" id="omnivore" value="omnivore">
+        		<label for="omnivore">Omnivore</label>
+        		<input type="radio" name="pescatarian" id="pescatarian" value="pescatarian">
+        		<label for="pescatarian">Pescatarian</label>
+        		<input type="radio" name="vegetarian" id="vegetarian" value="vegetarian">
+        		<label for="vegetarian">Vegetarian</label>
+        		<input type="radio" name="vegan" id="vegan" value="vegan">
+        		<label for="vegan">Vegan</label>
+        	</div>
+        </fieldset>
+
+        <fieldset>
+        	<div class="left">
+        		<legend>Which of these activities do you do? (you can chose more than one option)</legend>
+        	</div>
+
+        	<div class="right">
+        		<ul>
+        			<li>
+        				<input type="checkbox" name="activities" id="jogging" value="jogging">
+        				<label for="jogging">Jogging</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="activities" id="swimming" value="swimming">
+        				<label for="swimming">Swimming</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="activities" id="yoga" value="yoga">
+        				<label for="yoga">Yoga</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="activities" id="meditation" value="meditation">
+        				<label for="meditation">Meditation</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="activities" id="fitness" value="fitness">
+        				<label for="fitness">Fitness</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="activities" id="hiking" value="hiking">
+        				<label for="hiking">Hiking</label>
+        			</li>
+        		</ul>
+        	</div>
+        </fieldset>
+
+        <fieldset>
+        	<div class="left">
+        		<legend> Where do you live?(you can chose more than one option)</legend>
+        	</div>
+
+        	<div class="right">
+        		<ul>
+        			<li>
+        				<input type="checkbox" name="live" id="big city" value="big city">
+        				<label for="big city">Big city</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="live" id="small city" value="small city">
+        				<label for="small city">Small city</label>
+        			</li>
+        			<li>
+        				<input type="checkbox" name="live" id="town" value="town">
+        				<label for="town">Town</label>
+        			</li>
+        		</ul>
+        	</div>
+        </fieldset>
+
+        <fieldset>
+            <div class="left">
+                <label for="suggestions" id="suggestions-label">Suggestions:</label>
+            </div>
+            <div class="right">
+                <input type="text" id="suggestions" placeholder="Please let us know any information that you consider relevant" name="suggestions" required style="width: 300px; height: 80px;">
+            </div>
+        </fieldset>
+
+        <fieldset>
+        	<button id="submit" type="submit">Submit</button>
+        </fieldset>
+     </form>
+
+<!--     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    TEST --> 
+
+ </body>
+
+ </html>
+
+
